@@ -1,0 +1,202 @@
+package day01;
+
+public class VariableInitializationExample {
+public static void main(String[] args) throws Exception {
+	int value = 20;
+	int result = value + 10;
+	
+	System.out.println(result);
+	//-------------------------------------------------
+	
+	int hour = 3;
+	int minute = 5;
+	System.out.println(hour + "시간" + minute + "분");
+	
+	int totalMinute = (hour*60) + minute;
+	System.out.println("총 "+totalMinute + "분");
+	//---------------------------------------------------
+	
+	int x=3;
+	int y=5;
+	System.out.println("x=" + x + "\ny=" + y);
+	int temp = x;
+	x = y;
+	y= temp;
+	System.out.println("x=" + x + "\ny=" + y);
+	// ------------------------------------------------
+	
+	int v1 =15;
+	int v2 = 0;
+	if(v1>10) {
+		v2=v1-10;
+	}
+	int v3 = v1+v2 +5;
+	System.out.println(v1+"\n"+v2+"\n"+v3);
+	//-------------------------------------------------------
+	
+	int var1 = 0b1011;
+	int var2 = 0206;
+	int var3 = 365;
+	int var4 = 0xB3;
+	System.out.println("var1:" + var1);
+	System.out.println("var2:" + var2);
+	System.out.println("var3:" + var3);
+	System.out.println("var4:" + var4);
+	//---------------------------------------------------------
+	
+	byte var5 = -128;
+	byte var6 = -30;
+	byte var7 = 0;
+	byte var8 = 30;
+	byte var9 = 127;
+	System.out.println(var5);
+	System.out.println(var6);
+	System.out.println(var7);
+	System.out.println(var8);
+	System.out.println(var9);
+	//---------------------------------------------------------
+	
+	long var10 = 10;
+	long var11 = 20L;
+	long var12 = 100000000000000000L;
+	System.out.println(var10);
+	System.out.println(var11);
+	System.out.println(var12);
+	//---------------------------------------------------------
+	
+	char c1= 'A';
+	char c2= 65;
+	char c3 = '\u0041';
+	char c4 = '가';
+	char c5 = 44032;
+	char c6 = '\uac00';
+	System.out.println(c1);
+	System.out.println(c2);
+	System.out.println(c3);
+	System.out.println(c4);
+	System.out.println(c5);
+	System.out.println(c6);
+	//-----------------------------------------------------------
+	
+	String name = "홍길동";
+	String job = "프로그래머";
+	System.out.println(name);
+	System.out.println(job);
+	//-------------------------------------------------------------
+	
+	System.out.println("번호\t이름\t직업");
+	System.out.print("행 단위 출력\n");
+	System.out.println("우리는 \"개발자\"입니다.");
+	System.out.println("봄\\여름\\가을\\겨울");
+	//-------------------------------------------------------------
+	
+	float var13 = 3.14f;
+	double var14 = 3.14;
+	
+	float var15 = 0.1234545342f;
+	double var16 = 0.1231241355654656546;
+	
+	System.out.println("var13:" + var13);
+	System.out.println("var14:" + var14);
+	System.out.println("var15:" + var15);
+	System.out.println("var16:" + var16);
+	
+	double var17 = 3e6;
+	float var18 = 3e6F;
+	double var19 = 2e-3;
+	System.out.println("var17 "+var17);
+	System.out.println("var18 "+var18);
+	System.out.println("var19 "+var19);
+	
+	//-----------------------------------------------------------------
+	
+	String str5 = "java";
+	boolean result1 = str5.equals("java");
+	boolean result2 = str5.equals("Java");
+	System.out.println(result1);
+	System.out.println(result2);
+	//---------------------------------------------------------------------
+	
+	boolean stop = false;
+	if(stop) {
+		System.out.println("중지합니다.");
+	} else {
+		System.out.println("시작합니다");
+	}
+	//-----------------------------------------------------------------------
+	
+	byte byteValue = 10;
+	int intValue = byteValue;
+	System.out.println("intValue:"+ intValue);
+	
+	char charValue = '가';
+	intValue = charValue;
+	System.out.println("가의 유니코드:"+ intValue);
+	
+	intValue = 50;
+	long longValue = intValue;
+	System.out.println("longValue:"+ longValue);
+	
+	longValue= 100;
+	float floatValue = longValue;
+	System.out.println("floatValue:"+ floatValue);
+	
+	floatValue = 100.5F;
+	double doubleValue = floatValue;
+	System.out.println("doubleValue:"+doubleValue);
+	
+	//-----------------------------------------------------------------------------
+	int intValue2 = 44032;
+	char charValue2 = (char)intValue;
+	System.out.println(charValue2);
+	
+	long longValue2 = 500;
+	intValue =(int)longValue2;
+	System.out.println(intValue2);
+	
+	double doubleValue2 = 3.14;
+	intValue = (int)doubleValue2;
+	System.out.println(intValue);
+	//---------------------------------------------------------
+	
+	byte result3 = 10 +20;
+	System.out.println(result3);
+	
+	byte x3 =10;
+	byte y3= 20;
+	int result4 = x3+y3;
+	System.out.println(result4);
+	
+	//----------------------------------------------
+	int value3 =123;
+	System.out.printf("상품의 가격:%d원\n",value3);
+	System.out.printf("상품의 가격:%6d원\n",value3);
+	System.out.printf("상품의 가격:%-6d원\n",value3);
+	System.out.printf("상품의 가격:%06d원\n",value3);
+	
+	//---------------------------------------------------------
+	double area = 3.14159 * 10 * 10;
+	System.out.printf("반지름이 %d인 원의 넓이:%10.2f\n",10,area);
+	//---------------------------------------------------------
+	
+	String name2 = "홍길동";
+	String job2 = "도적";
+	System.out.printf("%6d|%-10s|%10s\n",1,name2,job2);
+	//------------------------------------------------------
+	
+	int keyCode;
+	
+	keyCode= System.in.read();
+	System.out.println("keyCode:"+ keyCode);
+	
+	keyCode= System.in.read();
+	System.out.println("keyCode:"+ keyCode);
+
+	keyCode= System.in.read();
+	System.out.println("keyCode:"+ keyCode);
+
+	
+	
+	
+}
+}
