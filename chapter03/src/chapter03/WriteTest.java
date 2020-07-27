@@ -5,6 +5,7 @@ import java.io.IOException;
 
 public class WriteTest {
 
+
 	public static void main(String[] args) {
 		try {
 			FileWriter fr = new FileWriter("test.txt");
